@@ -212,11 +212,26 @@ text-align: center;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     margin-bottom: 130px;
+    justify-items: center;
 }
 .sp-icon{
     filter: grayscale(100%);
 }
 
+/* Footer Design Starts */
+.foot{
+    max-width: 1440px;
+    max-height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:0 auto;
+    background-color: rgba(255, 144, 14, 0.1);
+    margin-bottom: 216px;
+}
+.foot-p{
+    font-size: 1.3rem;
+}
 /* Responsive Media Query */
 /*small size*/
 @media screen and (max-width: 576px) {
