@@ -144,6 +144,74 @@ main>section {
     width: 100%;
 }
 
+/* Feature Design Starts---------------------------- */
+.features-sec {
+    display: flex;
+    gap: 100px;
+}
+
+.left-f {
+    max-width: 50%;
+}
+
+.feature-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    padding-left: 24px;
+
+}
+
+#border {
+    border-left: 5px solid rgba(255, 144, 14, 1);
+
+}
+
+.feature-description,
+.banner-description {
+    font-size: 1rem;
+    color: #727272;
+}
+
+.feature-description {
+    max-width: 586px;
+}
+
+.bar-container {
+    padding: 30px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+
+}
+
+
+.bar-title,
+.banner-description {
+    margin: 0;
+}
+
+/* Feature Design Ends---------------------------- */
+
+#experience-badge{
+    padding: 45px 42px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-left: -100px;
+    margin-top: -100px;
+    /* try this with position */
+
+}
+#exp-year{
+    font-size: 4rem;
+    font-weight: 700;
+}
+.right-f img{
+    width: 100%;
+}
+
+
+
+
 /* Fact Design */
 
 .facts-container {
@@ -151,7 +219,8 @@ main>section {
     grid-template-columns: repeat(4, 1fr);
     justify-items: center;
 }
-.fact{
+
+.fact {
     width: 241px;
     height: 241px;
     border: 1px solid rgba(255, 144, 14, 1);
@@ -159,17 +228,19 @@ main>section {
     display: flex;
     justify-content: center;
     align-items: center;
-    
-    
+
+
 }
-.fact-name{
+
+.fact-name {
     font-size: 1.1rem;
     font-weight: 600;
     color: #727272;
     margin-top: 5px;
 
 }
-.fact-number{
+
+.fact-number {
     font-size: 2.8rem;
     font-weight: 600;
     color: #424242;
@@ -177,61 +248,69 @@ main>section {
     margin-bottom: 10px;
 
 }
-.fact-content{
-text-align: center;
+
+.fact-content {
+    text-align: center;
 }
 
-.some-facts > p{
+.some-facts>p {
     max-width: 542px;
     max-height: 52px;
     margin-bottom: 100px;
 }
-.some-facts > h3{
+
+.some-facts>h3 {
     margin-bottom: 22px;
 }
 
 /* Sponsor Design Starts */
 
-.sponsor-heading{
+.sponsor-heading {
     max-width: 542px;
     max-height: 129px;
     margin: 0 auto;
     text-align: center;
 }
-.sponsor-title{
+
+.sponsor-title {
     font-size: 2.8rem;
     font-weight: 700;
     margin-bottom: 23px;
 }
-.sponsor-details{
+
+.sponsor-details {
     font-size: 1rem;
     color: #727272;
     margin-bottom: 50px;
 }
-.sponsor-comp{
+
+.sponsor-comp {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     margin-bottom: 130px;
     justify-items: center;
 }
-.sp-icon{
+
+.sp-icon {
     filter: grayscale(100%);
 }
 
 /* Footer Design Starts */
-.foot{
+.foot {
     max-width: 1440px;
     max-height: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin:0 auto;
+    margin: 0 auto;
     background-color: rgba(255, 144, 14, 0.1);
     margin-bottom: 216px;
 }
-.foot-p{
+
+.foot-p {
     font-size: 1.3rem;
 }
+
 /* Responsive Media Query */
 /*small size*/
 @media screen and (max-width: 576px) {
@@ -245,37 +324,57 @@ text-align: center;
         flex-direction: column;
     }
 
-    .second-left, .facts-container, .sponsor-comp {
+    .second-left,
+    .facts-container,
+    .sponsor-comp {
         grid-template-columns: 1fr;
     }
 
     .second-right {
         margin: 0 auto;
     }
-    .facts-container{
+
+    .facts-container {
         justify-items: center;
         gap: 24px;
     }
-    .sponsor-comp{
+
+    .sponsor-comp {
         justify-items: center;
         gap: 30px;
         margin-top: 30px;
     }
-   
+    .features-sec{
+        flex-direction: column;
+    }
+    .left-f{
+        margin:0 auto;
+    }
+    #experience-badge{
+        margin-top: 20px;
+        margin-left: 20px ;
+    }
+
 
 }
 
 /*Medium Size*/
 @media screen and (min-width: 577px) and (max-width: 992px) {
-    .second-sec {
+    .second-sec, .features-sec{
         flex-direction: column;
     }
-    .sponsor-comp, .facts-container{
-        grid-template-columns: repeat(2,1fr);
+
+    .sponsor-comp,
+    .facts-container {
+        grid-template-columns: repeat(2, 1fr);
         gap: 50px;
         justify-items: center;
     }
-    
+    #experience-badge{
+        margin-top: 20px;
+        margin-left: 20px ;
+    }
+
+
 
 }
-
